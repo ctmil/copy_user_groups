@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<odoo>
+
+        <record model="ir.ui.view" id="re_res_users_copy_form">
+            <field name="name">re.res.users.copy</field>
+            <field name="model">res.users</field>
+	    <field name="inherit_id" ref="base.view_users_form"></field>
+            <field name="arch" type="xml">
+		<xpath expr="//header" position="inside">
+			<button name="copy_user_groups" type="object" string="Copiar grupos a otro usuario" />
+		</xpath>
+            </field>
+        </record>
+
+
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<odoo>
+
+
+        <record model="ir.ui.view" id="copy_groups_wizard_view">
+            <field name="name">copy.groups.wizard.view</field>
+            <field name="model">copy.groups.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Copiar grupos">
+                        <group>
+                                <field name="origin_user_id" readonly="1"/>
+                                <field name="user_id" />
+                        </group>
+                        <footer>
+                                <button name="action_confirm" type="object" string="Confirmar" />
+                        </footer>
+                </form>
+            </field>
+        </record>
+
+</odoo>
