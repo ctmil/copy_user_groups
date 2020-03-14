@@ -13,7 +13,6 @@ class CopyGroupsWizard(models.TransientModel):
 	_name = 'copy.groups.wizard'
 	_description = 'copy.groups.wizard'
 
-	@api.multi
 	def action_confirm(self):
 		if not self.user_id:
 			raise ValidationError('Debe seleccionar un usuario')
